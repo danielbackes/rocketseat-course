@@ -1,0 +1,41 @@
+{
+  "name": "@danielynx/rocketseat-starter",
+  "version": "0.0.1",
+  "description": "Project to practice Rocketseat Starter Course's lessons. Using the Feynman Technique to improve my learning about the course content and improve my English learning.",
+  "keywords": [
+    "NodeJS",
+    "Docker Swarm",
+    "Rocketseat Starter Course"
+  ],
+  "author": "Daniel B.",
+  "email": "danielynx@proton.me",
+  "license": "MIT",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "webpack --mode=development -w",
+    "dev-server": "webpack-dev-server --mode=development",
+    "build": "webpack --mode=production",
+    "index": "babel ./src/index.js -o ./public/index.js -w"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.5.5",
+    "@babel/core": "^7.5.5",
+    "@babel/plugin-transform-async-to-generator": "^7.5.0",
+    "@babel/polyfill": "^7.4.4",
+    "@babel/preset-env": "^7.5.5",
+    "babel-loader": "^8.0.6",
+    "compression": "^1.7.3",
+    "eslint": "^6.1.0",
+    "express": "^4.16.4",
+    "helmet": "^3.15.0",
+    "morgan": "^1.9.1",
+    "webpack": "^4.39.0",
+    "webpack-cli": "^3.3.6",
+    "webpack-dev-server": "^3.7.2",
+    "yarn": "^1.17.3"
+  },
+  "dependencies": {
+    "axios": "^0.19.0"
+  }
+}
